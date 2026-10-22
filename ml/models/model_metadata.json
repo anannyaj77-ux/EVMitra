@@ -1,0 +1,42 @@
+{
+  "model_name": "Linear Regression",
+  "target": "range_km",
+  "features": [
+    "battery_kwh",
+    "motor_power_kw",
+    "wh_per_km",
+    "vehicle_type_enc"
+  ],
+  "vehicle_type_classes": [
+    "Car",
+    "E-Rickshaw",
+    "Motorcycle",
+    "Scooter"
+  ],
+  "train_size": 83,
+  "test_size": 21,
+  "metrics": {
+    "Linear Regression": {
+      "mae": 18.33,
+      "rmse": 21.81,
+      "r2": 0.9866
+    },
+    "Random Forest": {
+      "mae": 19.79,
+      "rmse": 26.48,
+      "r2": 0.9802
+    },
+    "Gradient Boosting": {
+      "mae": 20.97,
+      "rmse": 27.76,
+      "r2": 0.9782
+    }
+  },
+  "best_model_metrics": {
+    "mae": 18.33,
+    "rmse": 21.81,
+    "r2": 0.9866
+  },
+  "dataset_note": "Training data: EVMitra curated EV specs database (manufacturer data) + physically-plausible synthetic augmentation. range_km = (battery_kwh \u00d7 1000) / wh_per_km \u00b1 noise.",
+  "trained_on": "2026-10-04"
+}

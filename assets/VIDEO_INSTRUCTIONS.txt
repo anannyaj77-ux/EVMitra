@@ -1,0 +1,19 @@
+EV VIDEO PLACEHOLDER
+=====================
+
+To show an EV video on the EVMitra Home page:
+
+1. Obtain a royalty-free EV video (e.g., from Pexels.com → search "electric vehicle")
+2. Rename it to: ev_showcase.mp4
+3. Place it in this folder: EVMitra/assets/ev_showcase.mp4
+4. Restart the Streamlit app
+
+The app will automatically detect the video and display it.
+
+If the file is not present, a YouTube embed is shown as fallback (requires internet).
+
+Suggested free sources:
+- https://www.pexels.com/search/videos/electric%20vehicle/
+- https://pixabay.com/videos/search/electric%20car/
+
+Note: Ensure you have rights to use any video in your demonstration.
