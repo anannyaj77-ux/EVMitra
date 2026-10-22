@@ -1,17 +1,15 @@
-# ⚡ EVMitra – Smart Electric Vehicle Platform
+# EVMitra Smart Electric Vehicle Platform
 
-> **MCA Semester 3 Mini Project**  
-> A Python-based intelligent EV platform acting as a digital companion for EV buyers and owners.
+> "MCA Semester 3 Mini Project"
+> A Python based intelligent EV platform acting as a digital companion for EV buyers and owners.
 
----
+ Quick Start
 
-## 🚀 Quick Start
+ Prerequisites
+ Python 3.10 or higher
+ Windows / macOS / Linux
 
-### Prerequisites
-- Python 3.10 or higher
-- Windows / macOS / Linux
-
-### 1. Clone / Download the Project
+1 Clone / Download the Project
 
 ```bash
 # If using Git:
@@ -21,7 +19,7 @@ cd EVMitra
 # Or simply extract the project ZIP and open the folder
 ```
 
-### 2. Create a Virtual Environment (Recommended)
+2 Create a Virtual Environment (Recommended)
 
 ```bash
 python -m venv venv
@@ -31,13 +29,13 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-### 3. Install Dependencies
+ 3 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment
+4 Configure Environment
 
 ```bash
 # Copy the example env file
@@ -48,7 +46,7 @@ cp .env.example .env          # macOS/Linux
 notepad .env                  # Windows
 ```
 
-### 5. Initialize Database
+5 Initialize Database
 
 ```bash
 python database/init_db.py
@@ -56,7 +54,7 @@ python database/init_db.py
 
 This creates `database/evmitra.db` with all sample data.
 
-### 6. Train ML Model
+ 6 Train ML Model
 
 ```bash
 python ml/train_model.py
@@ -64,7 +62,7 @@ python ml/train_model.py
 
 This trains the EV range prediction model and saves it to `ml/models/`.
 
-### 7. Run the Application
+7 Run the Application
 
 ```bash
 streamlit run app.py
@@ -74,7 +72,7 @@ Open your browser at **http://localhost:8501**
 
 ---
 
-## 🎯 One-Command Setup (Windows)
+One Command Setup (Windows)
 
 ```bash
 setup.bat
@@ -90,7 +88,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 EVMitra/
@@ -139,21 +137,20 @@ EVMitra/
     └── (documentation files)
 ```
 
----
 
-## 🔑 Admin Access
+
+ Admin Access
 
 Default admin credentials (set in `.env`):
 - **Username:** `admin`
 - **Password:** `evmitra2024`
 
-> ⚠️ **Change the password in your `.env` file before demo!**
+>  **Change the password in your `.env` file before demo!**
 
 Navigate to **Admin** in the sidebar → Enter credentials → Manage EVs, Schemes, Notifications.
 
----
 
-## 🎬 EV Video
+ EV Video
 
 To display an EV video on the Home page:
 1. Download a free EV video from [Pexels](https://pexels.com) or [Pixabay](https://pixabay.com)
@@ -165,7 +162,7 @@ If no video file is present, a YouTube embed is shown as fallback (requires inte
 
 ---
 
-## 📊 Sample CSV for Owner Analytics
+ Sample CSV for Owner Analytics
 
 Use `data/sample_owner_analytics.csv` to demo the Owner Analytics module.
 
@@ -180,7 +177,7 @@ Use `data/sample_owner_analytics.csv` to demo the Owner Analytics module.
 
 ---
 
-## 🤖 ML Model
+ ML Model
 
 - **Target:** EV Range (km) prediction
 - **Features:** Battery (kWh), Motor Power (kW), Efficiency (Wh/km), Vehicle Type
@@ -190,7 +187,7 @@ Use `data/sample_owner_analytics.csv` to demo the Owner Analytics module.
 
 ---
 
-## 🌐 API Keys (Optional)
+ API Keys (Optional)
 
 EVMitra works **without any API keys**. All features have local fallbacks.
 
@@ -200,9 +197,8 @@ EVMitra works **without any API keys**. All features have local fallbacks.
 | Charging | Reference database | Reference database |
 | Showrooms | Reference database | Reference database |
 
----
 
-## 📋 Features
+ Features
 
 | Module | Status |
 |--------|--------|
@@ -221,9 +217,8 @@ EVMitra works **without any API keys**. All features have local fallbacks.
 | Admin Panel | ✅ Complete |
 | EV Video Section | ✅ Complete (with fallback) |
 
----
 
-## 🛡️ Technology Stack
+ Technology Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -235,9 +230,9 @@ EVMitra works **without any API keys**. All features have local fallbacks.
 | Visualization | Plotly |
 | Environment | python-dotenv |
 
----
 
-## ⚠️ Disclaimer
+
+ Disclaimer
 
 EVMitra is an **MCA academic mini-project**. All data is for educational purposes only.
 - EV specifications: From manufacturer websites and public sources
@@ -246,9 +241,8 @@ EVMitra is an **MCA academic mini-project**. All data is for educational purpose
 - ML predictions: Based on training data with documented methodology
 - Environmental estimates: Tailpipe CO₂ only (not lifecycle)
 
----
 
-## 👩‍💻 Author
+ Author
 
 MCA Semester 3 Mini Project  
 Academic Year 2024–25
